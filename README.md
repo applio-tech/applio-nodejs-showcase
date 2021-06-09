@@ -2,7 +2,7 @@
 ## Exampel how to use the Applio IoT platform in a NodeJs app
 
 ### 
-Get the api key (JWT TOKEN) from your [Applio Free account](free.applio.tech)().
+Get the api key (JWT TOKEN) from your [Applio Free account](free.applio.tech). <br>
 Set it in main.js => apiKey
 
 
@@ -12,13 +12,13 @@ Set it in main.js => apiKey
     cd applio-nodejs-showcase
 ```
 
-** Commands for start the project
+**Commands for start the project:** 
 
-    First time to install all dependencies run command: 
+1. First time to install all dependencies run command: 
 ```
-            npm run first_start
+npm run first_start
 ```
-    Otherwise run command: 
+2. Otherwise run command: 
 ```
-            npm run start. 
+npm run start.
 ```
