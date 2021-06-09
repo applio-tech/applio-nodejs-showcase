@@ -15,10 +15,10 @@ Set it in main.js => apiKey
 ** Commands for start the project
 
     First time to install all dependencies run command: 
-        ```
+```
             npm run first_start
-        ```
+```
     Otherwise run command: 
-        ```
+```
             npm run start. 
-        ```
+```
