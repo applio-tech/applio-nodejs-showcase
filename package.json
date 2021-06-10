@@ -1,0 +1,36 @@
+{
+  "name": "applio-nodejs-showcase",
+  "version": "0.0.1",
+  "description": "Exampel how to use the Applio IoT platform in a NodeJs app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "first": "cd applio-nodejs-showcase-app && echo install package: && npm i && echo build angular: && ng build --prod && cd ../ && echo install node packages: && npm i &&  echo start nodejs: && node main.js ",
+    "start": "cd applio-nodejs-showcase-app && echo build angular: && ng build --prod && cd ../ && echo start nodejs: && node main.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-schedule": "^1.3.2",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applio-tech/applio-nodejs-showcase.git"
+  },
+  "keywords": [
+    "javascript",
+    "angular",
+    "nodejs",
+    "IoT"
+  ],
+  "author": "Applio Tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/applio-tech/applio-nodejs-showcase/issues"
+  },
+  "homepage": "https://github.com/applio-tech/applio-nodejs-showcase#readme"
+}

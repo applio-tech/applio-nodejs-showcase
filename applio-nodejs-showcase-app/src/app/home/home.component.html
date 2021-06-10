@@ -1,0 +1,29 @@
+
+
+   
+   <div>
+     
+     <section class="centerHandling">
+       <h1>Applio Showcase.</h1>
+       <p>Detta är en showcase för att visa vad man kan göra med Lora tekniken och devices.</p>
+       <!-- <a mat-button [routerLink]="'/occupations'"><mat-icon>account_balance</mat-icon> </a></p>
+       <p>Den andra delen visar temperaturen i de olika rummen.<a mat-button [routerLink]="'/temperature'"> <span>Node workplace office room temperature current</span> </a></p> -->
+       
+        <p>För att kunna se en översyn över alla rum som är lediga: 
+        <a mat-button [routerLink]="'/overwiev'"><mat-icon> map icon</mat-icon> room occupations overwiev  </a></p>
+
+       <p>Där finns två olika delar. </p>
+       <p>Första delen är att man ser vilka rum som är upptagna eller lediga.</p>
+       <ul>
+          <li><a mat-button [routerLink]="'/occupations'"><mat-icon>account_balance</mat-icon> room occupations current  </a></li>
+        </ul>
+        <p>Den andra delen visar temperaturen i de olika rummen.</p>
+       <ul>
+        <li><a mat-button [routerLink]="'/temperature'"><mat-icon>waves</mat-icon> room temperature current </a></li>
+      </ul>
+       </section>
+       
+     
+   </div>
+   
+   <router-outlet></router-outlet>

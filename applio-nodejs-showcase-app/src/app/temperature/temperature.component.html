@@ -1,0 +1,72 @@
+
+<style>
+  
+    .content {
+      display: flex;
+      margin: 82px auto 32px;
+      padding: 0 16px;
+      max-width: 960px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    svg.material-icons {
+      height: 24px;
+      width: auto;
+    }
+  
+    footer {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      line-height: 20px;
+    }
+  
+    footer a {
+      display: flex;
+      align-items: center;
+    }
+  
+    .example-card{
+      display: flex;
+      align-items: stretch;
+      text-align: justify;
+      justify-content: space-between;
+      padding: 10px;
+      width: 300px;
+    }
+  </style>
+  
+  
+  <div class="content" role="main">
+  
+    <h1>Node workespace office room manager for temperature</h1>
+     
+  
+    <div class="card-container">
+      <ul *ngFor="let dataDetails of data"> 
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image">
+            </div>
+            <mat-card-title>{{dataDetails.name}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>Temperature: {{dataDetails.temperature}} C</p>
+            <p>Comments:{{dataDetails.comment}}</p>
+            <p>Time: {{dataDetails.receive_date | date: 'yyyy-MM-dd HH:mm'}}</p>
+          </mat-card-content>
+        </mat-card>
+      </ul>
+    </div>
+  
+    <!-- Footer -->
+    <footer>
+     
+    </footer>
+  
+  
+  </div>
+  
+
+  <router-outlet></router-outlet>

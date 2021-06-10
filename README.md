@@ -3,22 +3,22 @@
 
 ### 
 Get the api key (JWT TOKEN) from your [Applio Free account](free.applio.tech). <br>
-Set it in main.js => apiKey
+Put it in main.js `const apiKey = '{apiKey}';`
 
 
 **To build the project,clone the project from github**
 
 ```
-    cd applio-nodejs-showcase
+cd applio-nodejs-showcase
 ```
 
 **Commands for start the project:** 
 
-1. First time to install all dependencies run command: 
+1. Initial install of all dependencies and run command: 
 ```
-npm run first_start
+npm first_start
 ```
-2. Otherwise run command: 
+2. Next time use run command: 
 ```
-npm run start.
+npm start.
 ```

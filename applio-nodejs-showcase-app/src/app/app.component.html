@@ -1,0 +1,41 @@
+
+<div class="mb-5 d-sm-flex justify-content-between align-items-center filter-btns"
+(window:resize)="onResize($event)">
+<!--  -->
+  <button *ngIf="mobileView" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+     <mat-icon>menu</mat-icon>
+     <span>Menu</span>
+   </button> 
+     
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+     <button mat-menu-item routerLink="/occupations">
+       <mat-icon>account_balance</mat-icon>
+       <span>Node workplace office room occupations current</span>
+     </button>
+     <button mat-menu-item routerLink="/temperature">
+       <mat-icon>waves</mat-icon>
+       <span>Node workplace office room temperature current</span>
+     </button>
+     <button mat-menu-item routerLink="/overwiev">
+      <mat-icon> map icon</mat-icon>
+      <span>Room occupations overwiev</span>
+    </button>
+   </mat-menu>
+ 
+ <div *ngIf="!mobileView">
+   <a mat-button [routerLink]="'/'"> <mat-icon>home</mat-icon> Home </a>
+   <a mat-button [routerLink]="'/occupations'"><mat-icon>account_balance</mat-icon>Node workplace office room occupations current  </a>
+   <a mat-button [routerLink]="'/temperature'"> <mat-icon>waves</mat-icon> <span>Node workplace office room temperature current</span> </a>
+   <a mat-button [routerLink]="'/overwiev'"><mat-icon> map icon</mat-icon><span>Room occupations overwiev </span> </a>
+ </div>
+ 
+   <hr>
+ 
+ 
+ </div> 
+
+ <router-outlet></router-outlet>

@@ -1,0 +1,19 @@
+.centerHandling {
+    margin: auto;
+    margin-top:100px;
+    padding: 10px;
+    margin-left: 10%;
+  }
+
+  .text{
+    margin-left: 20%;
+    display: flex;
+    align-items: stretch;
+  }
+  
+
+  a { 
+    display:block;
+    word-wrap:break-word;
+    text-align:left;
+}

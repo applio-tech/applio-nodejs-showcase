@@ -1,0 +1,43 @@
+<!-- <p></p>
+<div  class="background-image">
+    <div class="mainStructure" *ngFor="let dataDetails of data">
+         <p>
+            <span class="CR1">:)</span>   
+        </p> 
+        <p [ngClass]="dataDetails.name"><span class="unoccupied"></span></p>
+         <span  *ngFor="let dataDetails of data" class={{dataDetails.name}} [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  } >{{dataDetails.name}}" </span>  
+         [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }" 
+         <span class="room1" [ngClass]="{'occupied' : true, 'unoccupied':false  }"></span>    
+         <span ,{'occupied' : true, 'unoccupied':false  }]"></span>  
+        <span class="room3" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span> 
+        <span class="room4" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span> 
+        <span class="room5" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span> 
+        <span class="room6" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span> 
+        <span class="room7" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span> 
+        <span class="room8" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span> 
+        <span class="room9" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span> 
+        <span class="room10" [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied', moving : dataDetails.roomState == 'Entering or leaving'  }"></span>  
+    </div>
+</div> -->
+
+
+<div  class="background-image"> 
+     <span  *ngFor="let dataDetails of data ">
+        <span class={{dataDetails.name}} >{{dataDetails.name}}</span> 
+        <!-- [ngClass]="{'occupied' : dataDetails.roomState == 'occupied', 'unoccupied': dataDetails.roomState == 'unoccupied'  }" -->
+    </span> 
+</div>
+
+<!-- <div class="background-image">
+    
+    <span class="CR1" ></span> 
+    <span class="CR2" [ngClass]="{'occupied' : false, 'unoccupied':true  }"></span> 
+    <span class="CR3" [ngClass]="{'occupied' : false, 'unoccupied': true  }"></span> 
+    <span class="CR4" [ngClass]="{'occupied' : true, 'unoccupied': false  }"></span> 
+    <span class="CR5" [ngClass]="{'occupied' : false, 'unoccupied':true  }"></span> 
+    <span class="CR6" [ngClass]="{'occupied' : true, 'unoccupied':false  }"></span> 
+    <span class="CR7" [ngClass]="{'occupied' : true, 'unoccupied':false  }"></span> 
+    <span class="CR8" [ngClass]="{'occupied' : false, 'unoccupied':true  }"></span> 
+    <span class="CR9" [ngClass]="{'occupied' : true, 'unoccupied':false  }"></span> 
+    <span class="CR10" [ngClass]="{'occupied' : true, 'unoccupied':false  }"></span> 
+</div> -->
