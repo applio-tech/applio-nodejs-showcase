@@ -2,11 +2,13 @@
 ## Exampel how to use the Applio IoT platform in a NodeJs app
 
 ### 
-Get the api key (JWT TOKEN) from your [Applio Free account](free.applio.tech). <br>
+Get the api key (JWT TOKEN) from your [Applio Free account](https://free.applio.tech/). <br>
 Put it in main.js `const apiKey = '{apiKey}';`
 
 
-**To build the project,clone the project from github**
+**To build the project first clone the project from github**
+
+**Then go to the map that has been created**
 
 ```
 cd applio-nodejs-showcase
